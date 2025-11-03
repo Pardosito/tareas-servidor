@@ -1,0 +1,19 @@
+<div class="chat-container" data-room="{{roomId}}" data-room-name="{{roomName}}">
+    <div class="chat-header">
+        <h2 id="roomTitle">Sala: {{roomName}}</h2>
+        <button id="leaveRoomButton" onclick="leaveRoom()">Salir de la Sala</button>
+    </div>
+
+    <div id="chat-window"></div>
+
+    <form id="message-form" class="message-input-area">
+        <input type="text" id="messageInput" placeholder="Escribe tu mensaje..." autocomplete="off">
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+
+<script>
+    function leaveRoom() {
+        window.location.href = "/rooms"
+    }
+</script>

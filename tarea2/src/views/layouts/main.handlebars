@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/static/js/chat.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Chatsitos Ian</h1>
+        <button id="logoutButton" onclick="closeSession()">Cerrar Sesión</button>
+    </header>
+    <main>
+        <body>
+            {{{body}}}
+        </body>
+    </main>
+</body>
+</html>
+
+<script>
+    function closeSession() {
+        sessionStorage.clear()
+        window.location.href = "/"
+    }
+</script>

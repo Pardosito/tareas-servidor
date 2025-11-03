@@ -1,0 +1,19 @@
+<div class="login-container">
+    <h2>Identifícate</h2>
+    <p>Ingresa tu nombre de usuario para continuar</p>
+    <input type="text" id="usernameInput" placeholder="Username" required="required">
+    <button id="loginButton" onclick="getUserName()">Ingresar</button>
+</div>
+
+<script>
+    function getUserName() {
+        let username = document.getElementById("usernameInput").value.trim();
+
+        if (username == "") {
+            alert("Please enter a username.")
+        }
+
+        sessionStorage.setItem("username", username);
+        window.location.href = "/rooms"
+    }
+</script>

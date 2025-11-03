@@ -1,0 +1,19 @@
+<div class="rooms-container">
+    <div><h2 id="welcomeTitle">Bienvenido,</h2> </div>
+    <h3>Selecciona una sala:</h3>
+    <ul class="room-list">
+        {{#each rooms}}
+        <li>
+            <button class="room-button" data-room="{{this.id}}">
+                {{this.name}}
+            </button>
+        </li>
+        {{/each}}
+    </ul>
+</div>
+
+<script>
+    const userSpan = document.getElementById("welcomeTitle");
+    const userName = sessionStorage.getItem("username");
+    userSpan.textContent = `Bienvenido, ${userName}`;
+</script>
