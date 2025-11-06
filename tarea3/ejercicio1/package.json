@@ -1,0 +1,11 @@
+{
+  "name": "ejercicio1",
+  "version": "1.0.0",
+  "main": "utils.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
