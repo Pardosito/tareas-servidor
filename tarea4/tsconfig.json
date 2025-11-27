@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "baseUrl": "src", //De donde vienen nuestros archivos ts
+        "outDir": "dist", //Carpeta a donde se transpilara el proyecto, si no existe la crea
+        "target": "es6", //La version de JS a la que transpilara el proyecto
+        "module": "nodenext", //La manera en que estamos trabajando el proyecto: modulos
+        "esModuleInterop": true, //Diciendo que cada modulo tiene su propio contexto para evitar conflictos con declaracion de variables con mismo nombre en distintos archivos
+        //Después ya podemos correr npm run scripts, lo que ya generaria el archivo transpilado de ts a js, lo podemos ver dentro de la carpeta dist
+    }
+}
